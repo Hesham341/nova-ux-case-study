@@ -1,5 +1,8 @@
 # Nova Travel | UX Case Study
 
+**GitHub source:** `Hesham341/nova-ux-case-study`  
+**Cloudflare Pages:** https://hesham-nova-case-study.pages.dev/
+
 An editorial case study presenting the research, design decisions, prototype screens and usability findings behind Nova Travel, a solo UX/UI bootcamp concept project by Hesham Shahwan.
 
 ## Live site

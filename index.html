@@ -20,6 +20,29 @@
   <meta property="og:image:alt" content="Nova Travel UX case study: travel planning, in one place, featuring an original interface">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://hesham-nova-case-study.pages.dev/assets/nova-social-preview.jpg">
+  <!-- Microsoft Clarity: site-owner browser opt-out via ?clarity=off. -->
+  <script>
+  (() => {
+    const key = 'hesham-clarity-owner-optout-v1';
+    const address = new URL(location.href);
+    const choice = address.searchParams.get('clarity');
+    let excluded = choice === 'off';
+    if (choice === 'off' || choice === 'on') {
+      try { if (choice === 'off') localStorage.setItem(key, '1'); else localStorage.removeItem(key); }
+      catch (_) { /* Honor one-visit opt-out. */ }
+      address.searchParams.delete('clarity');
+      history.replaceState(history.state, '', address.pathname + address.search + address.hash);
+    }
+    try { if (choice !== 'on' && localStorage.getItem(key) === '1') excluded = true; }
+    catch (_) { /* Storage blocked. */ }
+    if (excluded) return;
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src='https://www.clarity.ms/tag/'+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window,document,'clarity','script','zefh0i4icd');
+  })();
+  </script>
 </head>
 <body>
 <a href="#main" class="skip-link">Skip to case study</a>

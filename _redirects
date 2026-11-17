@@ -1,0 +1,3 @@
+# Preserve Clarity playback of sessions captured on this legacy SPA path.
+# The same root assets are available regardless of the entry path.
+/nova-ux-case-study/* /:splat 200
